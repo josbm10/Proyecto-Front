@@ -1,0 +1,60 @@
+.perfil_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 70%;
+  position: relative;
+  img {
+    width: 35%;
+    display: block;
+  }
+  button {
+    width: 150px;
+    padding: 10px;
+    background: #fb8500;
+    color: white;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .btn_regresar {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .perfil_detalles {
+    width: 65%;
+    li {
+      padding: 10px;
+    }
+  }
+  .proceso_adopcion {
+    margin: 50px;
+    text-align: center;
+    font-size: 20px;
+    ol {
+      display: flex;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+      font-size: 20px;
+      color: white;
+      padding: 10px;
+      width: 20%;
+      text-align: center;
+    }
+    li:nth-child(odd) {
+      background: #006d77;
+    }
+    li:nth-child(even) {
+      background: #83c5be;
+    }
+  }
+}

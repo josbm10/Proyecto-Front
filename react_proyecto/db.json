@@ -1,0 +1,55 @@
+{
+    "mascotas": [
+        {
+            "id": 1,
+            "name": "Bella",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg",
+            "status": "Disponible",
+            "sex": "Hembra",
+            "tall": "Mediano",
+            "activity": "Alta",
+            "born": "Octubre 2015",
+            "history": "¡Hola, mi nombre es Bella! ¿Sabes por qué me pusieron ese nombre? Pues porque soy super linda y noble. A mi me rescataron con bastantes problemas de piel, pero con mucho cuidado y amor, he logrado recuperarme de a pocos. Ahora ya estoy lista para irme a mi nuevo hogar. Soy una Wuf super cariñosa que siempre busco estar acompañada, por lo que busco una familia que me acompañe por siempre. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!"
+        },
+        {
+            "id": 2,
+            "name": "Anita",
+            "photo": "https://www.tiendanimal.es/articulos/wp-content/uploads/2017/02/comen-los-cachorros-border-collie-1200x720.jpg",
+            "status": "Adoptado",
+            "sex": "Hembra",
+            "tall": "Mediano",
+            "activity": "Alta",
+            "born": "Abril 2018",
+            "history": "¡Hola! Mi nombre es Anita y contigo, mi querido humano, tendremos una amistad que no olvidarás jamás. Me encanta jugar, saltar y divertirme con otros perros. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!"
+        },
+        {
+            "id": 3,
+            "name": "Nacho",
+            "photo": "https://www.eluniverso.com/resizer/y4Scc_nzI4QX7pgXMIhZpiIGBkg=/1190x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/YKYSZKHYV5FOFJCC3ZFY42ABYE.jpg",
+            "status": "Disponible",
+            "sex": "Macho",
+            "tall": "Bajo",
+            "activity": "Media",
+            "born": "Enero 2017",
+            "history": "¡Hola! Mi nombre es Nacho. Me encanta jugar, saltar y divertirme con otros perros. Soy un Wuf super fiel y amoroso. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!"
+        },
+        {
+            "id": 4,
+            "name": "Chipi",
+            "photo": "https://superpet.pe/blog/wp-content/uploads/2021/08/Golden-Retriever-La-gui%CC%81a-completa-de-esta-raza-1-750x450.jpg",
+            "status": "Disponible",
+            "sex": "Macho",
+            "tall": "Mediano",
+            "activity": "Media",
+            "born": "Mayo 2015",
+            "history": "Yo soy Chipi, y no vas a encontrar un Wuf más bueno que yo. Soy tranquilo, obediente y no entiendo el concepto de lo que son los juguetes, así que prefiero corretear para divertirme. Me gusta pasear y relajarme mientras me hacen cariño. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ]
+}

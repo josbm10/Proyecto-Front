@@ -1,0 +1,42 @@
+.grid_card {
+  position: relative;
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffb703;
+  border-radius: 8px;
+}
+.grid_card img {
+  display: block;
+  top: 0px;
+  right: 0px;
+  width: 250px;
+  height: 250px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.grid_card button {
+  border: none;
+  margin: 10px;
+  border-radius: 16px;
+  color: white;
+  background: #fb8500;
+  width: 80px;
+  padding: 10px;
+}
+.grid_card .card_status {
+  position: absolute;
+  font-size: 14px;
+  background: #ffb703;
+  color: white;
+  border-radius: 8px;
+  top: 0px;
+  left: 0px;
+}
+.grid_card h2 {
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+}
