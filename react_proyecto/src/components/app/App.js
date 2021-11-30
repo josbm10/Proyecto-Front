@@ -2,8 +2,7 @@ import "./App.css";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 import PagePerfil from "../perfil";
 import PageFormulario from "../formulario";

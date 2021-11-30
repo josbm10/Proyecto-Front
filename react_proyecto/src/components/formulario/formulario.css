@@ -3,6 +3,7 @@
   padding: 20px;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
@@ -48,6 +49,7 @@ select {
 
 }
 .formulario_container h2 {
+  color: white;
   font-size: 20px;
   padding: 10px;
   margin: 10px;

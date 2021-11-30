@@ -1,7 +1,9 @@
 .mascotas_container {
-  background: grey;
+  background: #89c2d9;
+  padding: 20px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .mascotas_filters {
   background: white;
@@ -13,7 +15,7 @@
   padding: 10px;
 }
 .mascotas_filters h2 {
-  padding: 10px;
+  font-size: 18px;
 }
 .mascotas_grid {
   width: 74%;

@@ -1,11 +1,11 @@
-import './mascota.css';
+import './adopta.css';
 import Card from '../card';
 import { useEffect, useState } from 'react';
-import { Navigate,useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 function PageAdopta(props) {
-    let navigate=useNavigate();
+
     const [perros, setPerros] = useState([]);
     function getPerros() {
         axios
@@ -19,9 +19,13 @@ function PageAdopta(props) {
     useEffect(() => {
         getPerros();
     }, []);
-    
+
     return (
+        
         <div class="mascotas_container">
+        <Breadcrumb className='Breadcrumb'>
+        <Breadcrumb.Item active>Adopta</Breadcrumb.Item>
+        </Breadcrumb>
 
             <div class="mascotas_filters">
                 <h2>Filtrar por:</h2>

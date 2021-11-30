@@ -1,6 +1,8 @@
 .perfil_container {
   padding: 20px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 .perfil_carrusel {

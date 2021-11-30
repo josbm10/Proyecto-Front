@@ -1,16 +1,15 @@
 import "./perfil.css";
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import { NavLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Carrusel from "../carrusel/carrusel";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
-function PagePerfil(props) {
-    const { id, name, sex, tall, activity, born, history, photo } = props;
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+function PagePerfil() {
     const [dog, setDog] = useState({});
     let navigate = useNavigate();
     let { idMascota } = useParams();
@@ -26,9 +25,13 @@ function PagePerfil(props) {
 
     return (
         <div className='perfil_container'>
+            <Breadcrumb className='Breadcrumb'>
+                <Breadcrumb.Item onClick={()=>navigate('/adopta')} >Adopta</Breadcrumb.Item>
+                <Breadcrumb.Item active >Perfil</Breadcrumb.Item>
+            </Breadcrumb>
             <div className='perfil_carrusel'>
                 {/* <Carrusel key={dog.id} id={dog.id} photo={dog.photo}/> */}
-                <img src={dog.photo} alt={name} />
+                <img src={dog.photo} alt={dog.name} />
             </div>
             <div className="perfil_detalles">
                 <ul>
@@ -42,12 +45,12 @@ function PagePerfil(props) {
                     <li>{dog.history}</li>
                     <li className='li_buttons'>
                         <button>Ayudame</button>
-                        <button className="btn_adoptame" onClick={()=>navigate('/formulario')}>Adoptame</button>
+                        <button className="btn_adoptame" onClick={() => navigate('/formulario')}>Adoptame</button>
                     </li>
                     <li className='li_redes'>
                         Compartelo en las redes sociales
                         <div>
-                        <Link to="https://www.facebook.com/" target="_blank"><FaFacebook /></Link>
+                            <Link to="https://www.facebook.com/" target="_blank"><FaFacebook /></Link>
                             <a href=''><FaTwitter /></a>
                             <a href=''><FaInstagram /></a>
                         </div>
