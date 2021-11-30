@@ -40,6 +40,7 @@ function PagePerfil() {
                     <li>ID:{dog.id}</li>
                     <li>Sexo: {dog.sex}</li>
                     <li>Tamaño: {dog.tall}</li>
+                    <li>Pelo: {dog.hair}</li>
                     <li>Nivel de Actividad: {dog.activity}</li>
                     <li>Fecha aprox de nacimiento: {dog.born}</li>
                     <li>Conoce un poco mi historia:</li>

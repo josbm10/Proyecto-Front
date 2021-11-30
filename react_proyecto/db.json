@@ -1,55 +1,67 @@
 {
-    "mascotas": [
-        {
-            "id": 1,
-            "name": "Bella",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg",
-            "status": "Disponible",
-            "sex": "Hembra",
-            "tall": "Mediano",
-            "activity": "Alta",
-            "born": "Octubre 2015",
-            "history": "¡Hola, mi nombre es Bella! ¿Sabes por qué me pusieron ese nombre? Pues porque soy super linda y noble. A mi me rescataron con bastantes problemas de piel, pero con mucho cuidado y amor, he logrado recuperarme de a pocos. Ahora ya estoy lista para irme a mi nuevo hogar. Soy una Wuf super cariñosa que siempre busco estar acompañada, por lo que busco una familia que me acompañe por siempre. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!"
-        },
-        {
-            "id": 2,
-            "name": "Anita",
-            "photo": "https://www.tiendanimal.es/articulos/wp-content/uploads/2017/02/comen-los-cachorros-border-collie-1200x720.jpg",
-            "status": "Adoptado",
-            "sex": "Hembra",
-            "tall": "Mediano",
-            "activity": "Alta",
-            "born": "Abril 2018",
-            "history": "¡Hola! Mi nombre es Anita y contigo, mi querido humano, tendremos una amistad que no olvidarás jamás. Me encanta jugar, saltar y divertirme con otros perros. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!"
-        },
-        {
-            "id": 3,
-            "name": "Nacho",
-            "photo": "https://www.eluniverso.com/resizer/y4Scc_nzI4QX7pgXMIhZpiIGBkg=/1190x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/YKYSZKHYV5FOFJCC3ZFY42ABYE.jpg",
-            "status": "Disponible",
-            "sex": "Macho",
-            "tall": "Bajo",
-            "activity": "Media",
-            "born": "Enero 2017",
-            "history": "¡Hola! Mi nombre es Nacho. Me encanta jugar, saltar y divertirme con otros perros. Soy un Wuf super fiel y amoroso. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!"
-        },
-        {
-            "id": 4,
-            "name": "Chipi",
-            "photo": "https://superpet.pe/blog/wp-content/uploads/2021/08/Golden-Retriever-La-gui%CC%81a-completa-de-esta-raza-1-750x450.jpg",
-            "status": "Disponible",
-            "sex": "Macho",
-            "tall": "Mediano",
-            "activity": "Media",
-            "born": "Mayo 2015",
-            "history": "Yo soy Chipi, y no vas a encontrar un Wuf más bueno que yo. Soy tranquilo, obediente y no entiendo el concepto de lo que son los juguetes, así que prefiero corretear para divertirme. Me gusta pasear y relajarme mientras me hacen cariño. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!"
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        }
-    ]
+  "mascotas": [
+    {
+      "id": 1,
+      "name": "Bella",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg",
+      "status": false,
+      "sex": "Hembra",
+      "tall": "Mediano",
+      "activity": "Alta",
+      "born": "Octubre 2015",
+      "history": "¡Hola, mi nombre es Bella! ¿Sabes por qué me pusieron ese nombre? Pues porque soy super linda y noble. A mi me rescataron con bastantes problemas de piel, pero con mucho cuidado y amor, he logrado recuperarme de a pocos. Ahora ya estoy lista para irme a mi nuevo hogar. Soy una Wuf super cariñosa que siempre busco estar acompañada, por lo que busco una familia que me acompañe por siempre. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!"
+    },
+    {
+      "id": 2,
+      "name": "Anita",
+      "photo": "https://www.tiendanimal.es/articulos/wp-content/uploads/2017/02/comen-los-cachorros-border-collie-1200x720.jpg",
+      "status": false,
+      "sex": "Hembra",
+      "tall": "Mediano",
+      "activity": "Alta",
+      "born": "Abril 2018",
+      "history": "¡Hola! Mi nombre es Anita y contigo, mi querido humano, tendremos una amistad que no olvidarás jamás. Me encanta jugar, saltar y divertirme con otros perros. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!"
+    },
+    {
+      "id": 3,
+      "name": "Nacho",
+      "photo": "https://www.eluniverso.com/resizer/y4Scc_nzI4QX7pgXMIhZpiIGBkg=/1190x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/YKYSZKHYV5FOFJCC3ZFY42ABYE.jpg",
+      "status": false,
+      "sex": "Hembra",
+      "tall": "Bajo",
+      "activity": "Media",
+      "born": "Enero 2017",
+      "history": "¡Hola! Mi nombre es Nacho. Me encanta jugar, saltar y divertirme con otros perros. Soy un Wuf super fiel y amoroso. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!"
+    },
+    {
+      "id": 4,
+      "name": "Chipi",
+      "photo": "https://superpet.pe/blog/wp-content/uploads/2021/08/Golden-Retriever-La-gui%CC%81a-completa-de-esta-raza-1-750x450.jpg",
+      "status": "true",
+      "sex": "Macho",
+      "tall": "Mediano",
+      "activity": "Media",
+      "born": "Mayo 2015",
+      "history": "Yo soy Chipi, y no vas a encontrar un Wuf más bueno que yo. Soy tranquilo, obediente y no entiendo el concepto de lo que son los juguetes, así que prefiero corretear para divertirme. Me gusta pasear y relajarme mientras me hacen cariño. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!"
+    },
+    {
+      "status": "true",
+      "name": "Lobo",
+      "photo": "data:image/jpeg;base64,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",
+      "born": "Febrero del 2020",
+      "tall": "Pequeño",
+      "sex": "Macho",
+      "activity": "Alto",
+      "hair": "Corto",
+      "history": "Hola me llamo Lobo soy  muy tierno y juguetón, desearía formar parte de tu familia y llevarte mucha alegria.",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ]
 }

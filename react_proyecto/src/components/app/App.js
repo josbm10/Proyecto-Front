@@ -7,6 +7,7 @@ import PageAdopta from "../adopta";
 import PageHome from "../home";
 import PageModificarAnimales from "../modificarAnimales";
 import PageRegistroAnimales from "../registroAnimales";
+import PageDonar from "../donar";
 
 import Header from "../header";
 import Footer from "../footer";
@@ -23,6 +24,7 @@ function App() {
         <Header />
         <Main>
           <Routes>
+          <Route path="/donar" element={<PageDonar />} />
             <Route path="/modificar" element={<PageModificarAnimales />} />
             <Route path="/registrar" element={<PageRegistroAnimales />} />
             <Route exact path="/home" element={<PageHome />} />
