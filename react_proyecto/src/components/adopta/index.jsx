@@ -3,9 +3,11 @@ import Card from '../card';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { useNavigate } from 'react-router-dom';
 
-function PageAdopta(props) {
+function PageAdopta() {
 
+    let navigate = useNavigate();
     const [perros, setPerros] = useState([]);
     function getPerros() {
         axios
@@ -15,18 +17,17 @@ function PageAdopta(props) {
             })
             .catch((e) => { });
     }
-
     useEffect(() => {
         getPerros();
     }, []);
 
     return (
-        
-        <div class="mascotas_container">
-        <Breadcrumb className='Breadcrumb'>
-        <Breadcrumb.Item active>Adopta</Breadcrumb.Item>
-        </Breadcrumb>
 
+        <div class="mascotas_container">
+            <Breadcrumb className='Breadcrumb'>
+                <Breadcrumb.Item onClick={() => navigate('/home')}>Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>Adopta</Breadcrumb.Item>
+            </Breadcrumb>
             <div class="mascotas_filters">
                 <h2>Filtrar por:</h2>
                 <h2>Edad</h2>

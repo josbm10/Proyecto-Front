@@ -26,7 +26,8 @@ function PagePerfil() {
     return (
         <div className='perfil_container'>
             <Breadcrumb className='Breadcrumb'>
-                <Breadcrumb.Item onClick={()=>navigate('/adopta')} >Adopta</Breadcrumb.Item>
+                <Breadcrumb.Item onClick={() => navigate('/home')}>Home</Breadcrumb.Item>
+                <Breadcrumb.Item onClick={() => navigate('/adopta')} >Adopta</Breadcrumb.Item>
                 <Breadcrumb.Item active >Perfil</Breadcrumb.Item>
             </Breadcrumb>
             <div className='perfil_carrusel'>

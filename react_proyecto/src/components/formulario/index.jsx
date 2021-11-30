@@ -3,14 +3,15 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { useNavigate } from "react-router-dom";
 
 function PageFormulario(props) {
-  let navigate=useNavigate();
+  let navigate = useNavigate();
   const { children } = props;
 
   return (
     <div className="formulario_container">
       <Breadcrumb className='Breadcrumb'>
-        <Breadcrumb.Item onClick={()=>navigate('/adopta')}>Adopta</Breadcrumb.Item>
-        <Breadcrumb.Item onClick={()=>navigate(-1)}>Perfil</Breadcrumb.Item>
+        <Breadcrumb.Item onClick={() => navigate('/home')}>Home</Breadcrumb.Item>
+        <Breadcrumb.Item onClick={() => navigate('/adopta')}>Adopta</Breadcrumb.Item>
+        <Breadcrumb.Item onClick={() => navigate(-1)}>Perfil</Breadcrumb.Item>
         <Breadcrumb.Item active>Formulario</Breadcrumb.Item>
       </Breadcrumb>
       <img src={require('../../assets/image/Dog1.jpg').default} alt="dog" />
