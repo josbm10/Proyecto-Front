@@ -17,6 +17,17 @@
 .mascotas_filters h2 {
   font-size: 18px;
 }
+
+.mascotas_filters button {
+  padding: 5px;
+  margin: 0 20% 0 20%;
+  border-radius: 8px;
+  width: 60%;
+  color: white;
+  background: #fb8500;
+  border: none;
+  
+}
 .mascotas_grid {
   width: 74%;
   margin-left: 1%;

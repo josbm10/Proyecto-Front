@@ -7,7 +7,7 @@ function PageRegistroAnimales() {
         status: '',
         name: '',
         photo: '',
-        born: '',
+        age: '',
         tall: '',
         sex: '',
         activity: '',
@@ -49,9 +49,9 @@ function PageRegistroAnimales() {
                  onChange={(e) =>
                     setForm((state) => ({ ...state, photo: e.target.value }))
                   }/>
-                <input type="text" placeholder='Nacimiento' 
+                <input type="text" placeholder='Edad' 
                  onChange={(e) =>
-                    setForm((state) => ({ ...state, born: e.target.value }))
+                    setForm((state) => ({ ...state, age: e.target.value }))
                   }/>
                 <select
                  onChange={(e) =>

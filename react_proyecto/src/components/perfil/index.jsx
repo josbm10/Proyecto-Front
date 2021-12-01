@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Carrusel from "../carrusel/carrusel";
-import { FaFacebook,FaTwitter,FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-function PagePerfil() {
+function PagePerfil(props) {
     const [dog, setDog] = useState({});
     let navigate = useNavigate();
     let { idMascota } = useParams();
@@ -34,13 +34,12 @@ function PagePerfil() {
             </div>
             <div className="perfil_detalles">
                 <ul>
-                    <li>{dog.name}</li>
-                    <li>ID:{dog.id}</li>
+                    <li style={{fontSize:'24px'}}>{dog.name}</li>
                     <li>Sexo: {dog.sex}</li>
                     <li>Tamaño: {dog.tall}</li>
                     <li>Pelo: {dog.hair}</li>
+                    <li>Edad: {dog.age} años</li>
                     <li>Nivel de Actividad: {dog.activity}</li>
-                    <li>Fecha aprox de nacimiento: {dog.born}</li>
                     <li>Conoce un poco mi historia:</li>
                     <li>{dog.history}</li>
                     <li className='li_buttons'>

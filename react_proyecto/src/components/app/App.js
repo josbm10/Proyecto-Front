@@ -24,10 +24,10 @@ function App() {
         <Header />
         <Main>
           <Routes>
-          <Route path="/donar" element={<PageDonar />} />
+            <Route exact path="/home" element={<PageHome />} />
+            <Route path="/donar" element={<PageDonar />} />
             <Route path="/modificar" element={<PageModificarAnimales />} />
             <Route path="/registrar" element={<PageRegistroAnimales />} />
-            <Route exact path="/home" element={<PageHome />} />
             <Route exact path="/adopta" element={<PageAdopta />} />
             <Route path="/adopta/:idMascota" element={<PagePerfil />} />
             <Route path="/formulario" element={<PageFormulario />} />

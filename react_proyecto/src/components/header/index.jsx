@@ -1,9 +1,11 @@
 import './header.css';
 import blanco from "../../assets/image/blanco.png"
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 function Header() {
+  let navigate=useNavigate();
     return <header className="hd-ft">
       <img className="hd-ft__logo" src={blanco} alt="logotipo" />
       <nav className="hd-ft__nav">
@@ -18,8 +20,8 @@ function Header() {
         </ul>
       </nav>
       <div className="container__btn">
-        <button className="btn btn-donar" type="button">Donar</button>
-        <button className="btn btn-login" type="button">Iniciar sesión</button>
+        <button className="btn btn-donar" type="button" onClick={(()=>{navigate('./donar')})}>Donar</button>
+        <button className="btn btn-login" type="button" >Iniciar sesión</button>
       </div>
     </header>;
   }
