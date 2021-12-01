@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Carrusel from "../carrusel/carrusel";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook,FaTwitter,FaInstagram } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 function PagePerfil() {
@@ -46,8 +44,8 @@ function PagePerfil() {
                     <li>Conoce un poco mi historia:</li>
                     <li>{dog.history}</li>
                     <li className='li_buttons'>
-                        <button>Ayudame</button>
-                        <button className="btn_adoptame" onClick={() => navigate('/formulario')}>Adoptame</button>
+                        <button onClick={() => navigate('/donar')}>Ayudame</button>
+                        <button onClick={() => navigate('/formulario')}>Adoptame</button>
                     </li>
                     <li className='li_redes'>
                         Compartelo en las redes sociales
