@@ -11,7 +11,7 @@ function PageDonar() {
                 <div><FaRegUser className='donar_icons' /><input type="text" placeholder='Apellido' minLength='4' /></div>
                 <div><FaRegEnvelope className='donar_icons' /><input type="email" placeholder='Correo Electronico' /></div>
                 <div> <FaMobileAlt className='donar_icons' /><input type="tel" placeholder='Movil' maxLength='9' /></div>
-                <div><FaRegMoneyBillAlt className='donar_icons' /><input type="number" placeholder='Cantidad' min='0'/></div>
+                <div><FaRegMoneyBillAlt className='donar_icons' /><input type="number" placeholder='Cantidad' min='0'step='50' /></div>
                 <div>
                     <FaRegCalendarCheck className='donar_icons' />
                     <select name="" id="">
