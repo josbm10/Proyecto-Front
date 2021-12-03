@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import Carrusel from "../carrusel/carrusel";
+import Carrusel from "../../components/carrusel/carrusel";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
@@ -24,7 +24,7 @@ function PagePerfil(props) {
     return (
         <div className='perfil_container'>
             <Breadcrumb className='Breadcrumb'>
-                <Breadcrumb.Item onClick={() => navigate('/home')}>Home</Breadcrumb.Item>
+                <Breadcrumb.Item onClick={() => navigate('/')}>Home</Breadcrumb.Item>
                 <Breadcrumb.Item onClick={() => navigate('/adopta')} >Adopta</Breadcrumb.Item>
                 <Breadcrumb.Item active >Perfil</Breadcrumb.Item>
             </Breadcrumb>

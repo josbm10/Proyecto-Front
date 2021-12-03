@@ -2,7 +2,7 @@
   "mascotas": [
     {
       "status": "false",
-      "name": "Bella",
+      "name": "BELLATRIX",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg",
       "age": "5",
       "tall": "Mediano",
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "name": "Anita",
+      "name": "ANITA",
       "photo": "https://www.tiendanimal.es/articulos/wp-content/uploads/2017/02/comen-los-cachorros-border-collie-1200x720.jpg",
       "status": "false",
       "sex": "Hembra",
@@ -25,20 +25,20 @@
       "history": "¡Hola! Mi nombre es Anita y contigo, mi querido humano, tendremos una amistad que no olvidarás jamás. Me encanta jugar, saltar y divertirme con otros perros. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!"
     },
     {
-      "id": 3,
-      "name": "Nacho",
+      "status": "false",
+      "name": "NACHO",
       "photo": "https://www.eluniverso.com/resizer/y4Scc_nzI4QX7pgXMIhZpiIGBkg=/1190x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/YKYSZKHYV5FOFJCC3ZFY42ABYE.jpg",
-      "status": "true",
-      "sex": "Hembra",
-      "tall": "Bajo",
-      "hair": "Corto",
-      "activity": "Media",
       "age": "9",
-      "history": "¡Hola! Mi nombre es Nacho. Me encanta jugar, saltar y divertirme con otros perros. Soy un Wuf super fiel y amoroso. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!"
+      "tall": "Tamaño",
+      "sex": "Hembra",
+      "activity": "Nivel de actividad",
+      "hair": "Corto",
+      "history": "¡Hola! Mi nombre es Nacho. Me encanta jugar, saltar y divertirme con otros perros. Soy un Wuf super fiel y amoroso. Además, si me adoptas, vengo con un kit de regalos. ¡Anímate!",
+      "id": 3
     },
     {
       "id": 4,
-      "name": "Chipi",
+      "name": "CHIPI",
       "photo": "https://superpet.pe/blog/wp-content/uploads/2021/08/Golden-Retriever-La-gui%CC%81a-completa-de-esta-raza-1-750x450.jpg",
       "status": "true",
       "sex": "Macho",
@@ -49,28 +49,16 @@
       "history": "Yo soy Chipi, y no vas a encontrar un Wuf más bueno que yo. Soy tranquilo, obediente y no entiendo el concepto de lo que son los juguetes, así que prefiero corretear para divertirme. Me gusta pasear y relajarme mientras me hacen cariño. Además, si me adoptas, vengo con un kit de regalos ¡Anímate!"
     },
     {
-      "status": "false",
-      "name": "Lalo",
-      "photo": "https://www.lavanguardia.com/files/image_449_220/uploads/2021/10/02/61580b94f0e17.jpeg",
-      "age": "4",
-      "tall": "Grande",
-      "sex": "Macho",
-      "activity": "Bajo",
-      "hair": "Corto",
-      "history": "",
-      "id": 5
-    },
-    {
-      "status": "false",
-      "name": "Meme",
+      "status": "true",
+      "name": "MOO",
       "photo": "https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/purina-7-razas-de-perros-peque%C3%B1os-para-departamento.png?itok=YVNHzG8L",
       "age": "3",
-      "tall": "Pequeño",
-      "sex": "Hembra",
+      "tall": "Mediano",
+      "sex": "Macho",
       "activity": "Mediano",
-      "hair": "Largo",
+      "hair": "Corto",
       "history": "tiene cola",
-      "id": 6
+      "id": 5
     }
   ],
   "comments": [

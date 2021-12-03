@@ -43,7 +43,7 @@ function PageRegistroAnimales() {
                 </select>
                 <input type="text" placeholder='Nombre del animal' 
                  onChange={(e) =>
-                    setForm((state) => ({ ...state, name: e.target.value }))
+                    setForm((state) => ({ ...state, name: e.target.value.toUpperCase() }))
                   }/>
                 <input type="text" placeholder='URL Foto' 
                  onChange={(e) =>
@@ -87,7 +87,7 @@ function PageRegistroAnimales() {
                     <option value='Largo'>Largo</option>
                     <option value='Corto'>Corto</option>
                 </select>
-                <textarea name="" id="" cols="30" rows="10" placeholder='Historia'
+                <textarea name="" id="" cols="30" rows="5" placeholder='Historia'
                  onChange={(e) =>
                     setForm((state) => ({ ...state, history: e.target.value }))
                   }></textarea>

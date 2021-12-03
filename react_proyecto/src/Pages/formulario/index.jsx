@@ -9,7 +9,7 @@ function PageFormulario(props) {
   return (
     <div className="formulario_container">
       <Breadcrumb className='Breadcrumb'>
-        <Breadcrumb.Item onClick={() => navigate('/home')}>Home</Breadcrumb.Item>
+        <Breadcrumb.Item onClick={() => navigate('/')}>Home</Breadcrumb.Item>
         <Breadcrumb.Item onClick={() => navigate('/adopta')}>Adopta</Breadcrumb.Item>
         <Breadcrumb.Item onClick={() => navigate(-1)}>Perfil</Breadcrumb.Item>
         <Breadcrumb.Item active>Formulario</Breadcrumb.Item>

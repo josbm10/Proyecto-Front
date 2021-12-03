@@ -36,11 +36,12 @@ function PageModificarAnimales() {
     const put_hair = useRef(null);
     const put_history = useRef(null);
 
-    function putData() {
+    function putData(e) {
+        e.preventDefault();
         const id_put = put_id.current.value;
         const mascota = {
             status: put_status.current.value,
-            name: put_name.current.value,
+            name: put_name.current.value.toUpperCase(),
             photo: put_photo.current.value,
             age: put_age.current.value,
             tall: put_tall.current.value,
@@ -64,37 +65,40 @@ function PageModificarAnimales() {
 
             <form action="" >
                 <input type="number" readOnly placeholder='ID' ref={put_id} defaultValue={perros.id} />
-                <select ref={put_status} defaultValue={perros.status} >
+
+                <select ref={put_status} >
                     <option hidden>Disponibilidad</option>
-                    <option value={false}>Disponible</option>
-                    <option value={true}>No disponible</option>
+                    <option value={false} selected={perros.status==='false'}>Disponible</option>
+                    <option value={true} selected={perros.status==='true'}>No disponible</option>
                 </select>
+
                 <input type="text" placeholder='Nombre del animal' ref={put_name} defaultValue={perros.name} />
-                <input type="text" placeholder='URL Foto' ref={put_photo} defaultValue={perros.photo} />
                 <input type="text" placeholder='Edad' ref={put_age} defaultValue={perros.age} />
-                <select ref={put_tall} defaultValue={perros.tall}>
+                <input type="text" placeholder='URL Foto' ref={put_photo} defaultValue={perros.photo} />
+                
+                <select ref={put_tall} >
                     <option selected hidden>Tamaño</option>
-                    <option value='Pequeño'>Pequeño</option>
-                    <option value='Mediano'>Mediano</option>
-                    <option value='Grande'>Grande</option>
+                    <option value='Pequeño' selected={perros.tall==='Pequeño'}>Pequeño</option>
+                    <option value='Mediano'selected={perros.tall==='Mediano'}>Mediano</option>
+                    <option value='Grande'selected={perros.tall==='Grande'}>Grande</option>
                 </select>
-                <select ref={put_sex} defaultValue={perros.sex}>
+                <select ref={put_sex} >
                     <option selected hidden>Sexo</option>
-                    <option value='Hembra'>Hembra</option>
-                    <option value='Macho'>Macho</option>
+                    <option value='Hembra' selected={perros.sex==='Hembra'} >Hembra</option>
+                    <option value='Macho' selected={perros.sex==='Macho'} >Macho</option>
                 </select>
-                <select ref={put_activity} defaultValue={perros.activity}>
+                <select ref={put_activity} >
                     <option selected hidden>Nivel de actividad</option>
-                    <option value='Bajo'>Bajo</option>
-                    <option value='Mediano'>Mediano</option>
-                    <option value='Alto'>Alto</option>
+                    <option value='Bajo' selected={perros.activity==='Bajo'} >Bajo</option>
+                    <option value='Mediano' selected={perros.activity==='Mediano'} >Mediano</option>
+                    <option value='Alto' selected={perros.activity==='Alto'} >Alto</option>
                 </select>
-                <select ref={put_hair} defaultValue={perros.hair}>
+                <select ref={put_hair}>
                     <option selected hidden>Largo de pelo</option>
-                    <option value='Largo'>Largo</option>
-                    <option value='Corto'>Corto</option>
+                    <option value='Largo' selected={perros.hair==='Largo'}>Largo</option>
+                    <option value='Corto' selected={perros.hair==='Corto'}>Corto</option>
                 </select>
-                <textarea name="" id="" cols="30" rows="10" placeholder='Historia' ref={put_history}
+                <textarea name="" id="" cols="30" rows="5" placeholder='Historia' ref={put_history}
                     defaultValue={perros.history}></textarea>
                 <button onClick={putData}>Enviar</button>
             </form>
